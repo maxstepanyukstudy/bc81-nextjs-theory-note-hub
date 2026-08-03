@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { getNotes } from "@/lib/api";
+import NoteList from "@/components/NoteList/NoteList";
 
 export const metadata: Metadata = {
   title: "Notes Page",
@@ -7,8 +8,12 @@ export const metadata: Metadata = {
 };
 
 export default async function Notes() {
-  const notes = await getNotes();
-  console.log("notes", notes);
+  const response = await getNotes();
 
-  return <div>Notes</div>;
+  return (
+    <section>
+      <h1>Notes List</h1>
+      {response?.notes?.length > 0 && <NoteList notes={response.notes} />}
+    </section>
+  );
 }
