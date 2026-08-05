@@ -1,3 +1,5 @@
+// disable - to fully ssr
+
 export default function Loading() {
   return <p>Завантаження... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nobis dolorum dolor architecto at ullam autem, molestiae dignissimos libero repellat numquam laboriosam quae? Impedit modi voluptate odio illo eligendi, quod, repellendus recusandae sit perferendis voluptatem ipsa quaerat, quos error! Eius cumque aut totam adipisci ea quibusdam eum vero ducimus magni nesciunt. Amet sit eveniet, atque tempora rerum optio sunt sequi ullam consectetur placeat laborum doloremque praesentium exercitationem, illo esse. Quia aperiam maxime perspiciatis, dolorem autem nihil alias hic quaerat iusto architecto eum qui. Eos atque impedit assumenda, delectus ullam nihil accusantium omnis placeat beatae, quibusdam ipsam obcaecati aliquam officia facere?</p>;
 }
