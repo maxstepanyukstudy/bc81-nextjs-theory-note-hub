@@ -19,6 +19,12 @@ export default function Profile() {
       </p>
 
       <Link href="/profile/edit">Edit profile</Link>
+      <br />
+      <Link href="/profile/1">GO to Profile id 1 (demo)</Link>
+      <br />
+      <Link href="/profile/0">
+        GO to Profile id 0 (demo - custom not found page)
+      </Link>
     </section>
   );
 }

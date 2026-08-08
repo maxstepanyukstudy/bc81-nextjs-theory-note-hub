@@ -1,0 +1,11 @@
+import Link from "next/link";
+
+export default function NotFoundProfile() {
+  return (
+    <div>
+      <h1>404 - PROFiLE Not Found</h1>
+      <p>Sorry, the page you&#39;re looking for doesn&#39;t exist.</p>
+      <Link href="/">Go back home</Link>
+    </div>
+  );
+}
