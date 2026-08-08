@@ -25,6 +25,9 @@ export default function Header() {
           <li>
             <Link href="/404">Test-404</Link>
           </li>
+          <li>
+            <Link href="/docs">Docs(Slug-demo)</Link>
+          </li>
         </ul>
       </nav>
     </header>
