@@ -17,10 +17,12 @@ export type NoteListResponse = {
 
 axios.defaults.baseURL = "https://next-v1-notes-api.goit.study";
 
-export async function getNotes() {
-  const res = await axios.get<NoteListResponse>("/notes");
+export const getNotes = async (categoryId?: string) => {
+  const res = await axios.get<NoteListResponse>("/notes", {
+    params: { categoryId },
+  });
   return res.data;
-}
+};
 
 export async function getSingleNote(id: string) {
   const res = await axios.get<Note>(`/notes/${id}`);
