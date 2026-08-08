@@ -22,6 +22,9 @@ export default function Header() {
           <li>
             <Link href="/about">About</Link>
           </li>
+          <li>
+            <Link href="/404">Test-404</Link>
+          </li>
         </ul>
       </nav>
     </header>
