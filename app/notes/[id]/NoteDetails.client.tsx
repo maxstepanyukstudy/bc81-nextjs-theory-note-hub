@@ -2,10 +2,11 @@
 
 import { getSingleNote } from "@/lib/api";
 import { useQuery } from "@tanstack/react-query";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 
 export default function NoteDetailsClient() {
   const { id } = useParams<{ id: string }>();
+  const router = useRouter();
 
   const {
     data: note,
@@ -17,6 +18,14 @@ export default function NoteDetailsClient() {
     refetchOnMount: false,
   });
 
+  function handleGoBack() {
+    const isSure = confirm("Are you sure?");
+    alert("example: removing cookies")
+    if (isSure) {
+      router.back();
+    }
+  }
+
   if (isLoading) return <p>Loading...</p>;
 
   if (error || !note) return <p>Some error..</p>;
@@ -27,6 +36,8 @@ export default function NoteDetailsClient() {
 
   return (
     <div>
+      <button onClick={handleGoBack}>Back</button>
+
       <h2>{note.title}</h2>
       <p>{note.content}</p>
       <p>{formattedDate}</p>
