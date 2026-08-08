@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Profile Page",
@@ -6,5 +7,18 @@ export const metadata: Metadata = {
 };
 
 export default function Profile() {
-  return <div>Profile</div>;
+  return (
+    <section>
+      <h1>My Profile</h1>
+      <h2>Name: User name</h2>
+      <p>
+        Some description: Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Cumque non quis, vero consectetur eum at commodi facere error,
+        laborum, rerum labore corrupti neque veritatis sed minima et nam. Autem,
+        cumque.
+      </p>
+
+      <Link href="/profile/edit">Edit profile</Link>
+    </section>
+  );
 }
