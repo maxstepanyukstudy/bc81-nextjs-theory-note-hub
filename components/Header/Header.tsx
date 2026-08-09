@@ -31,6 +31,9 @@ export default function Header() {
           <li>
             <Link href="/docs">Docs(Slug-demo)</Link>
           </li>
+          <li>
+            <Link href="/wip">Wip(redirect-demo)</Link>
+          </li>
         </ul>
       </nav>
     </header>
