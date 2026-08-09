@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Notes Page ...",
 };
 
-export default async function Notes2() {
+export default async function NotePage() {
   const response = await getNotes();
 
   return (

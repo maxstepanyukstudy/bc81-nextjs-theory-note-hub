@@ -11,13 +11,13 @@ export default function Header() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/notes">Notes</Link>
+            <Link href="/notesold">notes-old</Link>
           </li>
           <li>
-            <Link href="/notes2">Notes2</Link>
+            <Link href="/notes">note</Link>
           </li>
           <li>
-            <Link href="/notes2/filter/all">Notes2/filter/all</Link>
+            <Link href="/notes/filter/all">notes/filter/all</Link>
           </li>
           <li>
             <Link href="/profile">Profile</Link>

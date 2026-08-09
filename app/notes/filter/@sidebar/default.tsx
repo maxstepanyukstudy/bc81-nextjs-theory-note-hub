@@ -7,11 +7,11 @@ const NotesSidebar = async () => {
   return (
     <ul>
       <li>
-        <Link href={`/notes2/filter/all`}>All notes</Link>
+        <Link href={`/notes/filter/all`}>All notes</Link>
       </li>
       {categories.map((category) => (
         <li key={category.id}>
-          <Link href={`/notes2/filter/${category.id}`}>{category.name}</Link>
+          <Link href={`/notes/filter/${category.id}`}>{category.name}</Link>
         </li>
       ))}
     </ul>
